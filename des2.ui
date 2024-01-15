@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>687</width>
+    <width>859</width>
     <height>600</height>
    </rect>
   </property>
@@ -37,7 +37,7 @@ color: rgb(194, 197, 170)</string>
    <widget class="QLabel" name="record_label">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>80</x>
       <y>110</y>
       <width>161</width>
       <height>61</height>
@@ -54,8 +54,8 @@ color: rgb(194, 197, 170)</string>
    <widget class="QLabel" name="coins_label">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>190</y>
+      <x>270</x>
+      <y>110</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -72,7 +72,7 @@ color: rgb(194, 197, 170)</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>280</y>
+      <y>220</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -88,8 +88,8 @@ color: rgb(194, 197, 170)</string>
    <widget class="QLabel" name="background_label">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>370</y>
+      <x>70</x>
+      <y>350</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -106,7 +106,7 @@ color: rgb(194, 197, 170)</string>
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>470</y>
+      <y>490</y>
       <width>371</width>
       <height>51</height>
      </rect>
@@ -123,8 +123,8 @@ color: rgb(65, 72, 51)</string>
    <widget class="QLabel" name="photo_label">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>270</y>
+      <x>270</x>
+      <y>210</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -136,8 +136,8 @@ color: rgb(65, 72, 51)</string>
    <widget class="QPushButton" name="choose_Button">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>290</y>
+      <x>380</x>
+      <y>230</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -151,13 +151,79 @@ color: rgb(65, 72, 51)</string>
      <string>choose this character</string>
     </property>
    </widget>
+   <widget class="QLabel" name="back_label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>320</y>
+      <width>341</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="level_label">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>130</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Palatino Linotype&quot;;
+color: rgb(194, 197, 170)</string>
+    </property>
+    <property name="text">
+     <string>Level:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_Button">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>130</y>
+      <width>75</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Palatino Linotype&quot;;
+background-color: rgb(194, 197, 170);
+color: rgb(65, 72, 51)</string>
+    </property>
+    <property name="text">
+     <string>next</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_Button">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>130</y>
+      <width>75</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;Palatino Linotype&quot;;
+background-color: rgb(194, 197, 170);
+color: rgb(65, 72, 51)</string>
+    </property>
+    <property name="text">
+     <string>back</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>687</width>
+     <width>859</width>
      <height>21</height>
     </rect>
    </property>
