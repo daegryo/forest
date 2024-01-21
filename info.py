@@ -27,7 +27,11 @@ class Info(QMainWindow):
         self.hello_label.setText(f'Hello, {self.name}')
 
         self.level = self.cur.execute(f"""SELECT level FROM login
-                                                    WHERE username = '{self.name}'""").fetchone()[0].split(',')
+                                                    WHERE username = '{self.name}'""").fetchone()[0]
+        if self.level == 1:
+            self.level = ['1']
+        else:
+            self.level.split(',')
 
 
         print(type(self.level))
