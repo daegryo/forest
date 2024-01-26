@@ -46,6 +46,7 @@ class Login(QMainWindow):
                 self.res_Label.setText(f'Вы вошли в свой аккаунт, <br>можете закрыть окно</br>')
                 self.name = self.user_lineEdit.text()
                 print('вы вошли в свой аккаунт')
+                self.close()
             else:
                 self.res_Label.setText('Неверный пароль')
                 print('неверный пароль')
@@ -56,25 +57,9 @@ class Login(QMainWindow):
         print(self.users)
 
     def closeEvent(self, event):
-        if self.name != '':
-            reply = QMessageBox.question(
-                self,
-                'Информация',
-                'Вы уверены, что хотите закрыть окно?',
-                QMessageBox.Yes,
-                QMessageBox.No)
-        else:
-            reply = QMessageBox.question(
-                self,
-                'Информация',
-                'Вы не можете продолжить работу, пока не войдете в свой аккаунт',
-                QMessageBox.No)
-        if reply == QMessageBox.Yes:
-            event.accept()
-            sett.info = True
+        event.accept()
+        sett.info = True
 
-        else:
-            event.ignore()
 
 
 
